@@ -9,12 +9,12 @@
 }
 @font-face {
 	font-family: kamerik-3d;
-	src: url(../fonts/kamerik205-heavy.woff2);
+	src: url(html/fonts/kamerik205-heavy.woff2);
 	font-weight: 900;
 }
 @font-face {
 	font-family: merriweather-italic-3d;
-	src: url(../fonts/merriweather-regular-italic.woff2);
+	src: url(html/fonts/merriweather-regular-italic.woff2);
 }
 body {
 	background-color: #000;
@@ -36,11 +36,6 @@ body {
 	overflow: hidden;
 }
 .layers__container {
-  display: flex;
-  flex-wrap: wrap; /* Позволяет элементам "переноситься" на следующую строку, если они не помещаются */
-  justify-content: center; /* Центрирует элементы по горизонтали */
-}
-.layers__container {
 	height: 100vh;
 	min-height: 500px;
 	transform-style: preserve-3d;
@@ -48,6 +43,11 @@ body {
 	will-change: transform;
 	transition: transform var(--transition);
 }
+.layers__container {
+	display: flex;
+	flex-wrap: wrap; 
+	justify-content: center; 
+  }
 .layers__item {
 	position: absolute;
 	inset: -5vw;

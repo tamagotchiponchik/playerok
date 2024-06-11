@@ -36,6 +36,11 @@ body {
 	overflow: hidden;
 }
 .layers__container {
+  display: flex;
+  flex-wrap: wrap; /* Позволяет элементам "переноситься" на следующую строку, если они не помещаются */
+  justify-content: center; /* Центрирует элементы по горизонтали */
+}
+.layers__container {
 	height: 100vh;
 	min-height: 500px;
 	transform-style: preserve-3d;
